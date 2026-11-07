@@ -27,8 +27,9 @@ is the data controller. Contact: <a href="mailto:rcanbabaoglu@gmail.com">rcanbab
   <li>You don't create an account with a name, e-mail or phone number. The app makes an anonymous account in the background.</li>
   <li>We store your game progress so it isn't lost, and we measure how the app is used so we can improve it.</li>
   <li>We don't show ads in the app and we don't sell your data.</li>
-  <li>We advertise Nocta on other platforms, and the app shares limited data with TikTok to measure those ads. The
-    advertising identifier (IDFA) is used only if you allow tracking when iOS asks.</li>
+  <li>We advertise Nocta on other platforms. If you allow tracking when iOS asks, the app shares limited data with TikTok,
+    including the advertising identifier (IDFA), to measure those ads. If you don't, TikTok receives nothing from the
+    app.</li>
   <li>You can delete your cloud save and account from inside the app: <em>My Room → Account → Delete my data</em>.</li>
 </ul>
 
@@ -46,9 +47,10 @@ is the data controller. Contact: <a href="mailto:rcanbabaoglu@gmail.com">rcanbab
   <li><strong>Purchases.</strong> Payments are processed by Apple; we never see your card or payment details. Our purchase
     provider RevenueCat receives your anonymous account ID, purchase and subscription records and basic device information
     to validate purchases and keep your subscription active across reinstalls.</li>
-  <li><strong>Advertising measurement.</strong> The app includes TikTok's SDK. It sends TikTok app events (install, app
-    open, returning after two days, first chapter finished, and purchases with product, price and currency) together with
-    device data (identifier for vendors (IDFV), device model and IP address), so we can see how our ads perform.
+  <li><strong>Advertising measurement.</strong> The app includes TikTok's SDK, which runs only if you allow tracking (see
+    below). It then sends TikTok app events (install, app open, returning after two days, first chapter finished, and
+    purchases with product, price and currency) together with device data (identifier for vendors (IDFV), device model and
+    IP address), so we can see how our ads perform.
     RevenueCat also receives an Apple Ads attribution token and our analytics app-instance identifier. Apple's SKAdNetwork
     and AdAttributionKit report anonymously to ad networks how far a new install has got: story started, first chapter
     finished, Pass bought, and a revenue band.</li>
@@ -60,16 +62,16 @@ people.</p>
 <p>When you finish setting up Nocta after a new install, iOS asks whether Nocta may track you. If you allow it, the TikTok
 SDK also sends your device's advertising identifier (IDFA) with the events above, and RevenueCat stores the IDFA, IDFV and
 IP address, so we can tell which of our ads led to an install or a purchase.</p>
-<p>If you choose "Ask App Not to Track", no advertising identifier is collected. TikTok still receives the events and
-device data described above, without the IDFA. We use this data only to measure and improve our own advertising. You can
-change your choice at any time in iOS Settings › Privacy &amp; Security › Tracking.</p>
+<p>If you choose "Ask App Not to Track", or iOS has not asked you, the TikTok SDK doesn't run: no advertising identifier is
+collected and TikTok receives nothing from the app. We use this data only to measure and improve our own advertising. You
+can change your choice at any time in iOS Settings › Privacy &amp; Security › Tracking.</p>
 
 <h2>Why we use it (legal bases)</h2>
 <ul>
   <li>To provide the game, save your progress and deliver what you buy (performance of a contract).</li>
   <li>To understand which stories and features work, fix problems and keep the service secure (our legitimate interests).</li>
-  <li>To measure and improve our own advertising (our legitimate interests; for the advertising identifier, your
-    permission).</li>
+  <li>To measure and improve our own advertising (your permission for TikTok and the advertising identifier; our
+    legitimate interests for the Apple Ads token and Apple's anonymous conversion reports).</li>
   <li>To meet legal obligations, for example tax and accounting records for purchases.</li>
 </ul>
 
@@ -125,8 +127,8 @@ sorumlusu odur. İletişim: <a href="mailto:rcanbabaoglu@gmail.com">rcanbabaoglu
   <li>Ad, e-posta ya da telefon numarasıyla hesap açmazsın; uygulama arka planda anonim bir hesap oluşturur.</li>
   <li>İlerlemen kaybolmasın diye oyun verini saklarız, uygulamayı geliştirmek için nasıl kullanıldığını ölçeriz.</li>
   <li>Uygulamada reklam göstermeyiz, verini satmayız.</li>
-  <li>Nocta'yı başka platformlarda tanıtıyoruz ve bu reklamları ölçmek için uygulama TikTok ile sınırlı veri paylaşır.
-    Reklam kimliği (IDFA) yalnızca iOS sorduğunda takibe izin verirsen kullanılır.</li>
+  <li>Nocta'yı başka platformlarda tanıtıyoruz. iOS sorduğunda takibe izin verirsen uygulama, bu reklamları ölçmek için
+    reklam kimliği (IDFA) dahil sınırlı veriyi TikTok ile paylaşır. İzin vermezsen TikTok uygulamadan hiçbir veri almaz.</li>
   <li>Bulut kaydını ve hesabını uygulama içinden silebilirsin: <em>Odam → Hesap → Verilerimi sil</em>.</li>
 </ul>
 
@@ -143,8 +145,8 @@ sorumlusu odur. İletişim: <a href="mailto:rcanbabaoglu@gmail.com">rcanbabaoglu
   <li><strong>Satın almalar.</strong> Ödemeleri Apple işler; kart ya da ödeme bilgilerini hiçbir zaman görmeyiz. Satın alma
     sağlayıcımız RevenueCat, satın almaları doğrulamak ve aboneliğini yeniden yüklemelerde korumak için anonim hesap
     kimliğini, satın alma ve abonelik kayıtlarını ve temel cihaz bilgisini alır.</li>
-  <li><strong>Reklam ölçümü.</strong> Uygulamada TikTok'un SDK'sı bulunur. Reklamlarımızın nasıl çalıştığını görebilmemiz
-    için TikTok'a uygulama olaylarını (kurulum, uygulamayı açma, iki gün sonra geri dönme, ilk bölümü bitirme; ürün, fiyat ve
+  <li><strong>Reklam ölçümü.</strong> Uygulamada TikTok'un SDK'sı bulunur ve yalnızca takibe izin verirsen çalışır (aşağıya
+    bak). Bu durumda reklamlarımızın nasıl çalıştığını görebilmemiz için TikTok'a uygulama olaylarını (kurulum, uygulamayı açma, iki gün sonra geri dönme, ilk bölümü bitirme; ürün, fiyat ve
     para birimiyle satın almalar) cihaz verisiyle (satıcıya özel cihaz kimliği (IDFV), cihaz modeli ve IP adresi) birlikte
     gönderir. RevenueCat ayrıca Apple Ads atıf belirtecini ve analitik uygulama kurulum kimliğimizi alır. Apple'ın SKAdNetwork
     ve AdAttributionKit servisleri, yeni bir kurulumun ne kadar ilerlediğini (hikâyeye başlama, ilk bölümü bitirme, Pass satın
@@ -157,15 +159,16 @@ sohbet yoktur.</p>
 <p>Yeni bir kurulumdan sonra Nocta'yı ayarlamayı bitirdiğinde iOS, Nocta'nın seni takip etmesine izin verip vermediğini
 sorar. İzin verirsen TikTok SDK'sı yukarıdaki olaylarla birlikte cihazının reklam kimliğini (IDFA) de gönderir, RevenueCat de
 IDFA, IDFV ve IP adresini saklar; böylece hangi reklamımızın kuruluma ya da satın almaya yol açtığını görebiliriz.</p>
-<p>"Uygulamadan takip etmemesini iste"yi seçersen reklam kimliği toplanmaz. TikTok yukarıdaki olayları ve cihaz verisini IDFA
-olmadan almaya devam eder. Bu verileri yalnızca kendi reklamlarımızı ölçmek ve geliştirmek için kullanırız. Seçimini
-istediğin zaman iOS Ayarlar › Gizlilik ve Güvenlik › Takip bölümünden değiştirebilirsin.</p>
+<p>"Uygulamadan takip etmemesini iste"yi seçersen ya da iOS sana sormadıysa TikTok SDK'sı çalışmaz: reklam kimliği toplanmaz
+ve TikTok uygulamadan hiçbir veri almaz. Bu verileri yalnızca kendi reklamlarımızı ölçmek ve geliştirmek için kullanırız.
+Seçimini istediğin zaman iOS Ayarlar › Gizlilik ve Güvenlik › Takip bölümünden değiştirebilirsin.</p>
 
 <h2>Neden kullanıyoruz (hukuki sebepler)</h2>
 <ul>
   <li>Oyunu sunmak, ilerlemeni kaydetmek ve satın aldıklarını teslim etmek (sözleşmenin ifası).</li>
   <li>Hangi hikâyelerin ve özelliklerin işe yaradığını anlamak, hataları düzeltmek, hizmeti güvende tutmak (meşru menfaat).</li>
-  <li>Kendi reklamlarımızı ölçmek ve geliştirmek (meşru menfaat; reklam kimliği için senin iznin).</li>
+  <li>Kendi reklamlarımızı ölçmek ve geliştirmek (TikTok ve reklam kimliği için senin iznin; Apple Ads belirteci ve Apple'ın
+    anonim dönüşüm raporları için meşru menfaat).</li>
   <li>Satın almalara ilişkin vergi ve muhasebe kayıtları gibi yasal yükümlülükler.</li>
 </ul>
 
